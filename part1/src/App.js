@@ -18,14 +18,13 @@ const App = () => {
       name: "State of a component",
       exercises: 14
     }
-  ];
-  const exercises = parts.map(part => part.exercises);
+  ];  
 
   return (
     <div>
       <Header course={course} />
-      <Content parts={parts} exercises={exercises} />
-      <Total exercises={exercises} />
+      <Content parts={parts} />
+      <Total parts={parts} />
     </div>
   );
 };

@@ -1,9 +1,9 @@
 import React from "react";
 
-const Total = ({ exercises }) => {
+const Total = ({ parts }) => {
   return (
     <p>
-      Number of exercises {exercises.reduce((exercise, total) => (total += exercise), 0)}
+      Number of exercises {parts.map(part => part.exercises).reduce((exercise, total) => (total += exercise), 0)}
     </p>
   );
 };
